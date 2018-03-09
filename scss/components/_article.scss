@@ -1,0 +1,129 @@
+.article-list-item {
+  margin: 20px 0 0 0;
+  background: #fff;
+  opacity: 1;
+  outline: 0;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
+  transition: opacity .5s ease, background-color .5s ease;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  section {
+    padding: 10px 20px;
+  }
+  section.article-content {
+    color: #8d8c8c;
+    h3 {
+      text-align: center;
+      a {
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+  section.more-button {
+    text-align: center;
+  }
+  section.article-details {
+    color: #8d8c8c;
+    .article-created {
+      float: left;
+    }
+    .article-author {
+      float: right;
+    }
+    .clear:after {
+      display: table;
+      clear: both;
+      content: ' ';
+    }
+    .tags {
+      margin: 10px 0;
+    }
+  }
+}
+
+#featured_article {
+  width: 100%;
+  display: block;
+  min-height: 100px;
+  background: #58bcb3;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-top: 33%;
+}
+
+.featured_article_inside {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  width: 30%;
+}
+
+h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#article_single {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
+  transition: opacity .5s ease, background-color .5s ease;
+  section > header > img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .08);
+    transition: opacity .5s ease, background-color .5s ease;
+  }
+  footer {
+    border-top: 1px solid #e8e8e8;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .tags {
+    margin-top: 10px;
+  }
+  a.in-cookie {
+    color: #8d8c8c;
+  }
+}
+
+.social {
+  display: inline-block;
+
+  i {
+    margin-right: -6px;
+    font-size: 90%;
+    position: relative;
+    top: -1px;
+  }
+
+  span {
+    margin: 0 10px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  #featured_article {
+    height: 300px;
+    padding-top: 0;
+  }
+
+  .featured_article_inside {
+    width: 40%;
+  }
+}
